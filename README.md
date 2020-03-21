@@ -17,6 +17,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Deploy on Firebase
+
+If you wanna make a deployment just run `ng build --prod` with the configuration which you want and then go to `https://tutorial-angular-ad3e6.firebaseapp.com/`
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

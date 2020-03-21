@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tutorial-angular-ad3e6": {
+      "hosting": {
+        "tutorial": [
+          "tutorial-angular-ad3e6"
+        ]
+      }
+    }
+  }
+}

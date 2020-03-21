@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { products } from './../products';
+import { products } from './../products';;
 
 @Component({
   selector: 'app-product-list',
@@ -11,9 +11,21 @@ export class ProductListComponent implements OnInit {
 
   products = products;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  share(): void {
+    alert('jeje');
+  }
+
+
+  onNotify(name: string): void {
+    alert(
+      `You will be notified when the product *${name}* goes on sale.`
+    );
   }
 
 }

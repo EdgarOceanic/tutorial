@@ -18,6 +18,7 @@
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "enableIvy" : false // Uriel: Se desactiva debido a que no se reconocen los PIPES cuando esta ACTIVADO
   }
 }

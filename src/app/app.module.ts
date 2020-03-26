@@ -12,6 +12,14 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// ngrx
+import { StoreModule } from '@ngrx/store';
+import { cartReducer } from './cart.reducer';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from 'src/environments/environment';
+import { CartModule } from './cart.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +35,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // ngrx
+    StoreModule.forRoot({  }),// items: cartReducer
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+    }),
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

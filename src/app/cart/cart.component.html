@@ -6,6 +6,16 @@
     </a>
 </p>
 
+<div *ngIf="items.length">
+    <h3>
+        Items
+    </h3>
+    
+    <p style="font-style: italic; color: red;" (click)="clearCart()">
+        Clear cart 
+    </p>
+</div>
+
 <div class="cart-item" *ngFor="let item of items">
     <span>
         {{item.name}}
